@@ -1,22 +1,35 @@
 import React from 'react';
+import { FaInstagram, FaTwitter, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-gray-600 border-t shadow-inner mt-12">
-      <div className="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-        <div className="mb-4 md:mb-0">
-          <h2 className="text-xl font-semibold text-purple-500">Bloggy</h2>
-          <p className="text-sm mt-1">Your daily dose of thoughts and stories.</p>
+    <footer className="bg-purple-50 border-t border-purple-100 mt-12">
+      <div className="max-w-5xl mx-auto px-6 py-10 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+        
+        {/* Brand */}
+        <div className="mb-6 md:mb-0">
+          <h2 className="text-2xl font-bold text-purple-600">Bloggy</h2>
+          <p className="text-sm text-gray-500 mt-1">Thoughts, stories & ideas — made simple.</p>
         </div>
 
-        <div className="flex space-x-6 text-gray-500">
+        {/* Links */}
+        <div className="flex space-x-6 text-sm text-gray-600 mb-6 md:mb-0">
           <a href="#" className="hover:text-purple-500 transition">Privacy</a>
           <a href="#" className="hover:text-purple-500 transition">Terms</a>
           <a href="#" className="hover:text-purple-500 transition">Contact</a>
         </div>
+
+        {/* Socials */}
+        <div className="flex space-x-4 text-purple-500 text-xl">
+          <a href="#" className="hover:text-purple-700 transition"><FaInstagram /></a>
+          <a href="#" className="hover:text-purple-700 transition"><FaTwitter /></a>
+          <a href="#" className="hover:text-purple-700 transition"><FaGithub /></a>
+        </div>
       </div>
-      <div className="text-sm text-center text-gray-400 pb-4">
-        © {new Date().getFullYear()} Bloggy. All rights reserved.
+
+      {/* Bottom Line */}
+      <div className="text-sm text-gray-400 text-center pb-6">
+        © {new Date().getFullYear()} Bloggy. Built with ❤ by You.
       </div>
     </footer>
   );
