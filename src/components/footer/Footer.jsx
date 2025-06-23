@@ -19,12 +19,7 @@ const Footer = () => {
           <a href="#" className="hover:text-purple-500 transition">Contact</a>
         </div>
 
-{/* Links */}
-        <div className="flex space-x-6 text-sm text-gray-600 mb-6 md:mb-0">
-          <a href="#" className="hover:text-purple-500 transition">Privacy</a>
-          <a href="#" className="hover:text-purple-500 transition">Terms</a>
-          <a href="#" className="hover:text-purple-500 transition">Contact</a>
-        </div>
+
         {/* Socials */}
         <div className="flex space-x-4 text-purple-500 text-xl">
           <a href="#" className="hover:text-purple-700 transition"><FaInstagram /></a>
