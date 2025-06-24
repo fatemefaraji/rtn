@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
+import Articles from '../../components/articles/Articles';
 
 const Home = () => {
   return (
@@ -11,6 +12,24 @@ const Home = () => {
       <h1 className="text-4xl font-bold mb-4">Welcome to Our Blog!</h1>
       <p className="text-lg">Your favorite place to read & share thoughts.</p>
     </main>
+    <div className='bg-slate-900 border-r-cyan-800 py-2 px-2 flex flex-wrap justify-between items-center '>
+<Articles/>
+<Articles/>
+<Articles/>
+<Articles/>
+<Articles/>
+<Articles/>
+
+<Articles/>
+<Articles/>
+<Articles/>
+<Articles/>
+<Articles/>
+<Articles/>
+
+
+    </div>
+    
 
     <Footer />
     </div>
