@@ -2,10 +2,22 @@ import art from "../../../src/assets/images/1715604853550.png";
 
 function Articles() {
   return (
-    <div className="bg-slate-200 w-52 h-64 py-4 px-4 border-sky-300 font-semibold my-10 mx-5 hover:cursor-pointer hover:bg-slate-300 text-center transition shadow">
-      <img src={art} alt="Article Illustration" className="w-full h-5/6 hover:border-fuchsia-500" />
-      <h3 className="text-left p-2 font-bold">Variables</h3>
-      <p className="text-left">This is dummy text</p>
+    <div className="max-w-sm bg-white rounded-lg shadow-md hover:shadow-xl transition-transform transform hover:-translate-y-1 my-10 mx-5 cursor-pointer">
+      {/* Image section */}
+      <div className="overflow-hidden rounded-t-lg">
+        <img
+          src={art}
+          alt="Article Illustration"
+          className="w-full h-56 object-cover transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      {/* Content section */}
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-gray-800 mb-2">Variables</h3>
+        <p className="text-gray-600 text-sm">
+          This is dummy text. Describe your article briefly here to engage the reader.
+        </p>
+      </div>
     </div>
   );
 }
