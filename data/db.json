@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "How to Start a Blog with React",
+      "slug": "start-blog-with-react",
+      "author": "Fatemeh Faraji",
+      "date": "2025-07-04",
+      "tags": ["React", "Blogging", "JavaScript"],
+      "image": "https://via.placeholder.com/800x400.png?text=React+Blog",
+      "content": "Starting a blog with React is a great way to learn frontend development. In this post, we’ll explore how to build a simple blog from scratch using React, JSON Server, and Tailwind CSS..."
+    },
+    {
+      "id": 2,
+      "title": "Top 5 Tips for Writing Clean Code",
+      "slug": "tips-clean-code",
+      "author": "Sara Rezai",
+      "date": "2025-07-01",
+      "tags": ["Coding", "Best Practices", "Clean Code"],
+      "image": "https://via.placeholder.com/800x400.png?text=Clean+Code",
+      "content": "Writing clean code is crucial for maintainable software. Here are 5 tips: 1. Use meaningful names. 2. Keep functions short. 3. Avoid deep nesting. 4. Write comments wisely. 5. Refactor regularly."
+    },
+    {
+      "id": 3,
+      "title": "What is Tailwind CSS and Why Should You Use It?",
+      "slug": "tailwind-css-guide",
+      "author": "Mohammad Reza",
+      "date": "2025-06-25",
+      "tags": ["CSS", "Tailwind", "Frontend"],
+      "image": "https://via.placeholder.com/800x400.png?text=Tailwind+CSS",
+      "content": "Tailwind CSS is a utility-first CSS framework that helps you build custom designs without leaving your HTML. It’s highly customizable and works well with React apps..."
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "name": "Fatemeh Faraji",
+      "bio": "Frontend developer and blogger. Loves React and UI/UX design.",
+      "avatar": "https://via.placeholder.com/150x150.png?text=Fatemeh"
+    },
+    {
+      "id": 2,
+      "name": "Sara Rezai",
+      "bio": "Software engineer with a passion for clean code and teaching.",
+      "avatar": "https://via.placeholder.com/150x150.png?text=Sara"
+    },
+    {
+      "id": 3,
+      "name": "Mohammad Reza",
+      "bio": "Full-stack developer who enjoys writing and sharing web dev tutorials.",
+      "avatar": "https://via.placeholder.com/150x150.png?text=Mohammad"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "name": "Ali",
+      "text": "This was really helpful! Thanks for sharing.",
+      "date": "2025-07-04T10:45:00"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "name": "Leila",
+      "text": "Can you explain more about how to use JSON Server?",
+      "date": "2025-07-04T12:15:00"
+    }
+  ]
+}
