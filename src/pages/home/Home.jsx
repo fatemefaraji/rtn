@@ -5,33 +5,32 @@ import Articles from '../../components/articles/Articles';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-100 font-sans">
+    <div className="min-h-screen bg-gradient-to-br from-white via-blue-50 to-blue-100 text-gray-800 font-sans">
       <Navbar />
 
-      <main className="p-8 text-center text-gray-700">
-      <h1 className="text-4xl font-bold mb-4">Welcome to Our Blog!</h1>
-      <p className="text-lg">Your favorite place to read & share thoughts.</p>
-    </main>
-    <div className='bg-slate-900 border-r-cyan-800 py-2 px-2 flex flex-wrap justify-between items-center '>
-<Articles/>
-<Articles/>
-<Articles/>
-<Articles/>
-<Articles/>
-<Articles/>
+      <header className="text-center py-16 px-4">
+        <h1 className="text-5xl md:text-6xl font-extrabold text-blue-900 mb-4 animate-fade-in">
+          Discover Stories That Matter
+        </h1>
+        <p className="text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto">
+          Dive into curated content, expert opinions, and community insights.
+        </p>
+      </header>
 
-<Articles/>
-<Articles/>
-<Articles/>
-<Articles/>
-<Articles/>
-<Articles/>
+      <section className="max-w-7xl mx-auto px-6 py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {[...Array(9)].map((_, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform p-4"
+            >
+              <Articles />
+            </div>
+          ))}
+        </div>
+      </section>
 
-
-    </div>
-    
-
-    <Footer />
+      <Footer />
     </div>
   );
 };
