@@ -1,103 +1,304 @@
 {
-  "posts": [
+  "articles": [
     {
       "id": 1,
-      "title": "How to Start a Blog with React",
-      "slug": "start-blog-with-react",
-      "authorId": 1,
+      "title": "Getting Started with React Hooks",
+      "image": "https://via.placeholder.com/800x400.png?text=React+Hooks",
+      "author": {
+        "name": "Sarah Johnson",
+        "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+      },
+      "reading_time": "6 min",
+      "date": "2025-07-10",
+      "excerpt": "Learn how to use React Hooks in your projects"
+    },
+    {
+      "id": 2,
+      "title": "CSS Grid Layout Mastery",
+      "image": "https://via.placeholder.com/800x400.png?text=CSS+Grid",
+      "author": {
+        "name": "Michael Chen",
+        "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+      },
+      "reading_time": "8 min",
+      "date": "2025-07-09",
+      "excerpt": "Complete guide to modern CSS Grid layouts"
+    },
+    {
+      "id": 3,
+      "title": "JavaScript Performance Tips",
+      "image": "https://via.placeholder.com/800x400.png?text=JS+Performance",
+      "author": {
+        "name": "Emma Davis",
+        "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+      },
+      "reading_time": "5 min",
+      "date": "2025-07-08",
+      "excerpt": "Optimize your JavaScript code with these techniques"
+    },
+    {
+      "id": 4,
+      "title": "Building RESTful APIs with Node.js",
+      "image": "https://via.placeholder.com/800x400.png?text=Node+API",
+      "author": {
+        "name": "David Wilson",
+        "avatar": "https://randomuser.me/api/portraits/men/2.jpg"
+      },
+      "reading_time": "10 min",
+      "date": "2025-07-07",
+      "excerpt": "Step-by-step guide to creating robust APIs"
+    },
+    {
+      "id": 5,
+      "title": "TypeScript Best Practices",
+      "image": "https://via.placeholder.com/800x400.png?text=TypeScript",
+      "author": {
+        "name": "Olivia Martinez",
+        "avatar": "https://randomuser.me/api/portraits/women/3.jpg"
+      },
+      "reading_time": "7 min",
+      "date": "2025-07-06",
+      "excerpt": "How to write better TypeScript code"
+    },
+    {
+      "id": 6,
+      "title": "Responsive Design Principles",
+      "image": "https://via.placeholder.com/800x400.png?text=Responsive",
+      "author": {
+        "name": "James Anderson",
+        "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+      },
+      "reading_time": "6 min",
+      "date": "2025-07-05",
+      "excerpt": "Make your websites work on all devices"
+    },
+    {
+      "id": 7,
+      "title": "Vue.js Component Patterns",
+      "image": "https://via.placeholder.com/800x400.png?text=Vue+Components",
+      "author": {
+        "name": "Sophia Lee",
+        "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
+      },
+      "reading_time": "9 min",
       "date": "2025-07-04",
-      "tags": [1, 2, 3],
-      "image": "https://via.placeholder.com/800x400.png?text=React+Blog",
-      "excerpt": "Learn how to create a simple blog using React, Tailwind CSS, and JSON Server.",
-      "content": "Starting a blog with React is a great way to learn frontend development. In this post, we’ll explore how to build a simple blog from scratch using React, JSON Server, and Tailwind CSS...",
-      "likes": 12,
-      "views": 153,
-      "isFeatured": true
+      "excerpt": "Effective component design in Vue.js"
     },
     {
-      "id": 2,
-      "title": "Top 5 Tips for Writing Clean Code",
-      "slug": "tips-clean-code",
-      "authorId": 2,
+      "id": 8,
+      "title": "Web Accessibility Guidelines",
+      "image": "https://via.placeholder.com/800x400.png?text=Accessibility",
+      "author": {
+        "name": "Robert Taylor",
+        "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+      },
+      "reading_time": "8 min",
+      "date": "2025-07-03",
+      "excerpt": "Make your website accessible to everyone"
+    },
+    {
+      "id": 9,
+      "title": "GraphQL Fundamentals",
+      "image": "https://via.placeholder.com/800x400.png?text=GraphQL",
+      "author": {
+        "name": "Ava White",
+        "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+      },
+      "reading_time": "11 min",
+      "date": "2025-07-02",
+      "excerpt": "Introduction to GraphQL for beginners"
+    },
+    {
+      "id": 10,
+      "title": "Docker for Web Developers",
+      "image": "https://via.placeholder.com/800x400.png?text=Docker",
+      "author": {
+        "name": "William Brown",
+        "avatar": "https://randomuser.me/api/portraits/men/5.jpg"
+      },
+      "reading_time": "12 min",
       "date": "2025-07-01",
-      "tags": [4, 5],
-      "image": "https://via.placeholder.com/800x400.png?text=Clean+Code",
-      "excerpt": "Improve code quality and maintainability with these clean code practices.",
-      "content": "Writing clean code is crucial for maintainable software. Here are 5 tips: 1. Use meaningful names. 2. Keep functions short. 3. Avoid deep nesting. 4. Write comments wisely. 5. Refactor regularly.",
-      "likes": 30,
-      "views": 254,
-      "isFeatured": false
+      "excerpt": "Containerize your web applications"
     },
     {
-      "id": 3,
-      "title": "What is Tailwind CSS and Why Should You Use It?",
-      "slug": "tailwind-css-guide",
-      "authorId": 3,
+      "id": 11,
+      "title": "State Management in 2025",
+      "image": "https://via.placeholder.com/800x400.png?text=State+Mgmt",
+      "author": {
+        "name": "Mia Garcia",
+        "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+      },
+      "reading_time": "7 min",
+      "date": "2025-06-30",
+      "excerpt": "Comparing modern state management solutions"
+    },
+    {
+      "id": 12,
+      "title": "CSS Animations Workshop",
+      "image": "https://via.placeholder.com/800x400.png?text=CSS+Animations",
+      "author": {
+        "name": "Joseph Rodriguez",
+        "avatar": "https://randomuser.me/api/portraits/men/6.jpg"
+      },
+      "reading_time": "5 min",
+      "date": "2025-06-29",
+      "excerpt": "Create stunning animations with pure CSS"
+    },
+    {
+      "id": 13,
+      "title": "JAMstack Architecture",
+      "image": "https://via.placeholder.com/800x400.png?text=JAMstack",
+      "author": {
+        "name": "Charlotte Hernandez",
+        "avatar": "https://randomuser.me/api/portraits/women/7.jpg"
+      },
+      "reading_time": "9 min",
+      "date": "2025-06-28",
+      "excerpt": "Building modern websites with JAMstack"
+    },
+    {
+      "id": 14,
+      "title": "Web Security Essentials",
+      "image": "https://via.placeholder.com/800x400.png?text=Security",
+      "author": {
+        "name": "Daniel Martinez",
+        "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+      },
+      "reading_time": "10 min",
+      "date": "2025-06-27",
+      "excerpt": "Protect your web applications from attacks"
+    },
+    {
+      "id": 15,
+      "title": "Progressive Web Apps Guide",
+      "image": "https://via.placeholder.com/800x400.png?text=PWA",
+      "author": {
+        "name": "Amelia Lopez",
+        "avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+      },
+      "reading_time": "8 min",
+      "date": "2025-06-26",
+      "excerpt": "Turn your website into an app-like experience"
+    },
+    {
+      "id": 16,
+      "title": "Next.js for SEO",
+      "image": "https://via.placeholder.com/800x400.png?text=Next+SEO",
+      "author": {
+        "name": "Matthew Gonzalez",
+        "avatar": "https://randomuser.me/api/portraits/men/8.jpg"
+      },
+      "reading_time": "6 min",
       "date": "2025-06-25",
-      "tags": [3, 6],
-      "image": "https://via.placeholder.com/800x400.png?text=Tailwind+CSS",
-      "excerpt": "Tailwind CSS makes building UIs fast and flexible. Here's why you should try it.",
-      "content": "Tailwind CSS is a utility-first CSS framework that helps you build custom designs without leaving your HTML...",
-      "likes": 18,
-      "views": 198,
-      "isFeatured": false
-    }
-  ],
-  "authors": [
-    {
-      "id": 1,
-      "name": "Fatemeh Faraji",
-      "bio": "Frontend developer and blogger. Loves React and UI/UX design.",
-      "avatar": "https://via.placeholder.com/150x150.png?text=Fatemeh"
+      "excerpt": "Improve your search rankings with Next.js"
     },
     {
-      "id": 2,
-      "name": "Sara Rezai",
-      "bio": "Software engineer with a passion for clean code and teaching.",
-      "avatar": "https://via.placeholder.com/150x150.png?text=Sara"
+      "id": 17,
+      "title": "Design Systems 101",
+      "image": "https://via.placeholder.com/800x400.png?text=Design+Systems",
+      "author": {
+        "name": "Harper Perez",
+        "avatar": "https://randomuser.me/api/portraits/women/9.jpg"
+      },
+      "reading_time": "7 min",
+      "date": "2025-06-24",
+      "excerpt": "Create consistent UI with design systems"
     },
     {
-      "id": 3,
-      "name": "Mohammad Reza",
-      "bio": "Full-stack developer who enjoys writing and sharing web dev tutorials.",
-      "avatar": "https://via.placeholder.com/150x150.png?text=Mohammad"
-    }
-  ],
-  "tags": [
-    { "id": 1, "name": "React" },
-    { "id": 2, "name": "Blogging" },
-    { "id": 3, "name": "JavaScript" },
-    { "id": 4, "name": "Coding" },
-    { "id": 5, "name": "Clean Code" },
-    { "id": 6, "name": "Tailwind CSS" }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "postId": 1,
-      "name": "Ali",
-      "email": "ali@example.com",
-      "text": "This was really helpful! Thanks for sharing.",
-      "date": "2025-07-04T10:45:00",
-      "parentId": null
+      "id": 18,
+      "title": "WebAssembly Basics",
+      "image": "https://via.placeholder.com/800x400.png?text=WebAssembly",
+      "author": {
+        "name": "Ethan Sanchez",
+        "avatar": "https://randomuser.me/api/portraits/men/9.jpg"
+      },
+      "reading_time": "11 min",
+      "date": "2025-06-23",
+      "excerpt": "Introduction to high-performance web code"
     },
     {
-      "id": 2,
-      "postId": 1,
-      "name": "Leila",
-      "email": "leila@example.com",
-      "text": "Can you explain more about how to use JSON Server?",
-      "date": "2025-07-04T12:15:00",
-      "parentId": null
+      "id": 19,
+      "title": "CSS-in-JS Comparison",
+      "image": "https://via.placeholder.com/800x400.png?text=CSS-in-JS",
+      "author": {
+        "name": "Evelyn Torres",
+        "avatar": "https://randomuser.me/api/portraits/women/10.jpg"
+      },
+      "reading_time": "6 min",
+      "date": "2025-06-22",
+      "excerpt": "Styled-components vs Emotion vs Linaria"
     },
     {
-      "id": 3,
-      "postId": 1,
-      "name": "Fatemeh",
-      "email": "fatemeh@example.com",
-      "text": "Sure! I'll write a follow-up post about it soon.",
-      "date": "2025-07-04T13:10:00",
-      "parentId": 2
+      "id": 20,
+      "title": "Serverless Functions",
+      "image": "https://via.placeholder.com/800x400.png?text=Serverless",
+      "author": {
+        "name": "Alexander Ramirez",
+        "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
+      },
+      "reading_time": "9 min",
+      "date": "2025-06-21",
+      "excerpt": "Building backend logic without servers"
+    },
+    {
+      "id": 21,
+      "title": "Web Components Guide",
+      "image": "https://via.placeholder.com/800x400.png?text=Web+Components",
+      "author": {
+        "name": "Abigail Flores",
+        "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+      },
+      "reading_time": "7 min",
+      "date": "2025-06-20",
+      "excerpt": "Native component model for the web"
+    },
+    {
+      "id": 22,
+      "title": "React Native for Web",
+      "image": "https://via.placeholder.com/800x400.png?text=React+Native",
+      "author": {
+        "name": "Benjamin Washington",
+        "avatar": "https://randomuser.me/api/portraits/men/11.jpg"
+      },
+      "reading_time": "8 min",
+      "date": "2025-06-19",
+      "excerpt": "Build cross-platform apps with React"
+    },
+    {
+      "id": 23,
+      "title": "CSS Custom Properties",
+      "image": "https://via.placeholder.com/800x400.png?text=CSS+Variables",
+      "author": {
+        "name": "Emily Adams",
+        "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+      },
+      "reading_time": "5 min",
+      "date": "2025-06-18",
+      "excerpt": "Powerful theming with CSS variables"
+    },
+    {
+      "id": 24,
+      "title": "Testing Strategies",
+      "image": "https://via.placeholder.com/800x400.png?text=Testing",
+      "author": {
+        "name": "Christopher Nelson",
+        "avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+      },
+      "reading_time": "10 min",
+      "date": "2025-06-17",
+      "excerpt": "Comprehensive guide to frontend testing"
+    },
+    {
+      "id": 25,
+      "title": "Web Performance Audit",
+      "image": "https://via.placeholder.com/800x400.png?text=Performance",
+      "author": {
+        "name": "Elizabeth Carter",
+        "avatar": "https://randomuser.me/api/portraits/women/13.jpg"
+      },
+      "reading_time": "8 min",
+      "date": "2025-06-16",
+      "excerpt": "Identify and fix performance bottlenecks"
     }
   ]
 }

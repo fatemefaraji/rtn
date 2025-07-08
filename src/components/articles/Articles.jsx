@@ -6,10 +6,10 @@ function Articles() {
   return (
     <div className="max-w-md mx-auto bg-white/80 backdrop-blur-md border border-blue-200/40 rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer">
       
-      {/* Image */}
+  
       <div className="relative group">
         <img
-          src={art}
+          src={}
           alt="Article Visual"
           className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-105"
         />
@@ -21,23 +21,13 @@ function Articles() {
       {/* Text Content */}
       <div className="p-6">
         <h2 className="text-2xl font-bold text-blue-900 mb-2 leading-tight hover:underline">
-          Mastering Variables in JavaScript: A Visual Guide
+        
         </h2>
         <p className="text-gray-700 text-sm mb-4">
-          Learn how to declare, scope, and optimize your variables for cleaner, more readable JavaScript code.
+         
         </p>
 
-        {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-4">
-          {tags.map((tag) => (
-            <span
-              key={tag}
-              className="bg-blue-100 text-blue-700 text-xs font-semibold px-3 py-1 rounded-full"
-            >
-              #{tag}
-            </span>
-          ))}
-        </div>
+        
 
         {/* Footer */}
         <div className="flex items-center justify-between">

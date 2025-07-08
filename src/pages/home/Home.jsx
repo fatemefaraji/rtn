@@ -19,14 +19,14 @@ const Home = () => {
 
       <section className="max-w-7xl mx-auto px-6 py-8">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {[...Array(9)].map((_, index) => (
+        
             <div
-              key={index}
+              
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 hover:-translate-y-1 transform p-4"
             >
               <Articles />
             </div>
-          ))}
+          
         </div>
       </section>
 
