@@ -1,35 +1,46 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-md sticky top-0 z-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <a href="/" className="text-2xl font-bold text-indigo-600">Weblog</a>
-        <div className="hidden md:flex space-x-6">
-          <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
-          <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">Categories</a>
-          <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">About</a>
-          <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
+    <nav className="bg-white shadow-sm">
+      <div className="container mx-auto px-4 py-3">
+        <div className="flex justify-between items-center">
+          <Link href="/" className="text-2xl font-bold text-blue-600">Weblog</Link>
+          
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-6">
+            <Link   to="/" className="text-gray-700 hover:text-blue-600">Home</Link>
+            <Link  to="categories" className="text-gray-700 hover:text-blue-600">Categories</Link>
+            <Link  to="about" className="text-gray-700 hover:text-blue-600">About</Link>
+            <Link  to="contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
+          </div>
+          
+          {/* Mobile Toggle Button */}
+          <button 
+            onClick={() => setIsOpen(!isOpen)}
+            className="md:hidden text-gray-700 focus:outline-none"
+          >
+            {isOpen ? (
+              <span className="text-2xl">×</span>
+            ) : (
+              <span className="text-2xl">☰</span>
+            )}
+          </button>
         </div>
-        <button
-          className="md:hidden text-gray-700 focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
-          </svg>
-        </button>
+        
+        {/* Mobile Navigation */}
+        {isOpen && (
+          <div className="md:hidden mt-2 space-y-2 pb-2">
+            <Link   to="/" className="block py-2 text-gray-700 hover:text-blue-600">Home</Link>
+            <Link   to="categories"  className="block py-2 text-gray-700 hover:text-blue-600">Categories</Link>
+            <Link   to="about" className="block py-2 text-gray-700 hover:text-blue-600">About</Link>
+            <Link   to="contact" className="block py-2 text-gray-700 hover:text-blue-600">Contact</Link>
+          </div>
+        )}
       </div>
-      {isOpen && (
-        <div className="md:hidden bg-white px-4 pb-4">
-          <a href="#" className="block py-2 text-gray-700 hover:text-indigo-600">Home</a>
-          <a href="#" className="block py-2 text-gray-700 hover:text-indigo-600">Categories</a>
-          <a href="#" className="block py-2 text-gray-700 hover:text-indigo-600">About</a>
-          <a href="#" className="block py-2 text-gray-700 hover:text-indigo-600">Contact</a>
-        </div>
-      )}
     </nav>
   );
 };

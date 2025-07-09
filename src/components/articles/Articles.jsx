@@ -1,32 +1,36 @@
-function Articles({ article, index }) {
+import React from 'react';
+
+function Articles({ article }) {
   return (
-    <div
-      className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-xl animate-fade-in"
-      style={{ animationDelay: `${index * 100}ms` }}
-    >
-      <img
-        src={article.image}
-        alt={article.title}
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+      <img 
+        src={article.image} 
+        alt={article.title} 
         className="w-full h-48 object-cover"
       />
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-gray-900 mb-2 line-clamp-2">{article.title}</h3>
-        <div className="flex items-center mb-4">
-          <img
-            src={article.author.avatar}
-            alt={article.author.name}
+      
+      <div className="p-4">
+        <h3 className="text-xl font-semibold mb-2 text-gray-800">{article.title}</h3>
+        
+        <div className="flex items-center mb-3">
+          <img 
+            src={article.author.avatar} 
+            alt={article.author.name} 
             className="w-8 h-8 rounded-full mr-2"
           />
-          <span className="text-sm font-medium text-gray-700">{article.author.name}</span>
+          <span className="text-sm text-gray-600">{article.author.name}</span>
         </div>
-        <p className="text-gray-600 text-sm mb-4 line-clamp-3">{article.excerpt}</p>
-        <div className="flex justify-between items-center text-xs text-gray-500">
-          <span>{article.reading_time}</span>
-          <span>{new Date(article.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+        
+        <p className="text-gray-600 mb-4">{article.excerpt}</p>
+        
+        <div className="flex justify-between text-sm text-gray-500 mb-3">
+          <span>{article.reading_time} read</span>
+          <span>{new Date(article.date).toLocaleDateString()}</span>
         </div>
-        <a
-          href="#"
-          className="mt-4 inline-block text-indigo-600 font-medium text-sm hover:text-indigo-800 transition-colors"
+        
+        <a 
+          href="#" 
+          className="text-blue-600 hover:text-blue-800 font-medium"
         >
           Read More →
         </a>
