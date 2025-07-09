@@ -3,51 +3,31 @@ import React, { useState } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const NavbarItems = [
-    { label: "Home", href: "#" },
-    { label: "Posts", href: "#" },
-    { label: "About", href: "#" },
-    { label: "Contact", href: "#" }
-  ];
-
   return (
-    <nav className='bg-white shadow-md w-full z-10 sticky top-0'>
-      <div className='max-w-4xl mx-auto px-4 flex justify-between items-center py-0'>
-        <div className='text-2xl font-serif text-purple-500 py-4'>
-          Bloggy
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <a href="/" className="text-2xl font-bold text-indigo-600">Weblog</a>
+        <div className="hidden md:flex space-x-6">
+          <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">Home</a>
+          <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">Categories</a>
+          <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">About</a>
+          <a href="#" className="text-gray-700 hover:text-indigo-600 transition-colors">Contact</a>
         </div>
-
-        <ul className='hidden md:flex space-x-6'>
-          {NavbarItems.map((item) => (
-            <li key={item.label}>
-              <a href={item.href} className='text-gray-600 hover:text-purple-500 transition py-4'>
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-
-        <div className="md:hidden">
-          <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 text-2xl">
-            ☰
-          </button>
-        </div>
+        <button
+          className="md:hidden text-gray-700 focus:outline-none"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+          </svg>
+        </button>
       </div>
-
       {isOpen && (
-        <div className="md:hidden bg-white py-2 shadow-inner">
-          <ul className="flex flex-col items-center space-y-2">
-            {NavbarItems.map((item) => (
-              <li key={item.label}>
-                <a
-                  href={item.href}
-                  className="block px-4 py-2 text-gray-600 hover:bg-gray-100 w-full text-center"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+        <div className="md:hidden bg-white px-4 pb-4">
+          <a href="#" className="block py-2 text-gray-700 hover:text-indigo-600">Home</a>
+          <a href="#" className="block py-2 text-gray-700 hover:text-indigo-600">Categories</a>
+          <a href="#" className="block py-2 text-gray-700 hover:text-indigo-600">About</a>
+          <a href="#" className="block py-2 text-gray-700 hover:text-indigo-600">Contact</a>
         </div>
       )}
     </nav>
