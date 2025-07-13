@@ -5,39 +5,39 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-sm">
-      <div className="container mx-auto px-4 py-3">
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+      <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-blue-600">Weblog</Link>
-          
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-6">
-            <Link   to="/" className="text-gray-700 hover:text-blue-600">Home</Link>
-            <Link  to="categories" className="text-gray-700 hover:text-blue-600">Categories</Link>
-            <Link  to="about" className="text-gray-700 hover:text-blue-600">About</Link>
-            <Link  to="contact" className="text-gray-700 hover:text-blue-600">Contact</Link>
+          {/* Logo */}
+          <Link to="/" className="text-3xl font-extrabold text-emerald-700">
+            Weblog
+          </Link>
+
+          {/* Desktop Menu */}
+          <div className="hidden md:flex items-center space-x-6 text-base font-medium">
+            <Link to="/" className="text-gray-700 hover:text-emerald-600 transition duration-200">Home</Link>
+            <Link to="/categories" className="text-gray-700 hover:text-emerald-600 transition duration-200">Categories</Link>
+            <Link to="/about" className="text-gray-700 hover:text-emerald-600 transition duration-200">About</Link>
+            <Link to="/contact" className="text-gray-700 hover:text-emerald-600 transition duration-200">Contact</Link>
           </div>
-          
-          {/* Mobile Toggle Button */}
-          <button 
+
+          {/* Mobile Menu Button */}
+          <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-gray-700 focus:outline-none"
+            className="md:hidden text-gray-700 text-2xl focus:outline-none"
+            aria-label="Toggle Menu"
           >
-            {isOpen ? (
-              <span className="text-2xl">×</span>
-            ) : (
-              <span className="text-2xl">☰</span>
-            )}
+            {isOpen ? '✕' : '☰'}
           </button>
         </div>
-        
-        {/* Mobile Navigation */}
+
+        {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden mt-2 space-y-2 pb-2">
-            <Link   to="/" className="block py-2 text-gray-700 hover:text-blue-600">Home</Link>
-            <Link   to="categories"  className="block py-2 text-gray-700 hover:text-blue-600">Categories</Link>
-            <Link   to="about" className="block py-2 text-gray-700 hover:text-blue-600">About</Link>
-            <Link   to="contact" className="block py-2 text-gray-700 hover:text-blue-600">Contact</Link>
+          <div className="md:hidden mt-4 space-y-3">
+            <Link to="/" className="block text-gray-700 hover:text-emerald-600 transition">Home</Link>
+            <Link to="/categories" className="block text-gray-700 hover:text-emerald-600 transition">Categories</Link>
+            <Link to="/about" className="block text-gray-700 hover:text-emerald-600 transition">About</Link>
+            <Link to="/contact" className="block text-gray-700 hover:text-emerald-600 transition">Contact</Link>
           </div>
         )}
       </div>

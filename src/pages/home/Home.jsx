@@ -17,42 +17,45 @@ const Home = () => {
         setLoading(false);
       })
       .catch((error) => {
-        setError('Failed to load articles');
+        setError('❌ Failed to load articles. Please try again later.');
         setLoading(false);
       });
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col  bg-emerald-400 ">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-emerald-50 via-white to-emerald-100">
       
       
-      <main className="flex-grow container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
-          Latest Articles
+      <main className="flex-grow container mx-auto px-4 py-12">
+        <h1 className="text-4xl font-extrabold text-center text-emerald-700 mb-10">
+          📰 Latest Articles
         </h1>
-        
+
         {loading && (
-          <div className="text-center py-8">
-            <p className="text-gray-600">Loading articles...</p>
+          <div className="flex justify-center py-12">
+            <div className="w-10 h-10 border-4 border-emerald-500 border-dashed rounded-full animate-spin"></div>
           </div>
         )}
-        
+
         {error && (
-          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded text-center">
+          <div className="bg-red-100 border border-red-400 text-red-700 px-6 py-4 rounded-xl text-center shadow-md mb-6">
             {error}
           </div>
         )}
-        
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {articles.map(article => (
-            <Link>
-            <Articles key={article.id} article={article} />
+
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {articles.map((article) => (
+            <Link
+              to={`/articles/${article.slug || article.id}`}
+              key={article.id}
+              className="transform transition-transform duration-300 hover:scale-105"
+            >
+              <Articles article={article} />
             </Link>
-            
           ))}
         </div>
       </main>
-      
+
       <Footer />
     </div>
   );
