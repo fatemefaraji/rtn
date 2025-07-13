@@ -3,6 +3,7 @@ import axios from 'axios';
 import Navbar from '../../components/navbar/Navbar';
 import Footer from '../../components/footer/Footer';
 import Articles from '../../components/articles/Articles';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   const [articles, setArticles] = useState([]);
@@ -44,7 +45,10 @@ const Home = () => {
         
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {articles.map(article => (
+            <Link>
             <Articles key={article.id} article={article} />
+            </Link>
+            
           ))}
         </div>
       </main>
