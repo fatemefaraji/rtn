@@ -10,7 +10,13 @@
       },
       "reading_time": "6 min",
       "date": "2025-07-10",
-      "excerpt": "Learn how to use React Hooks in your projects"
+      "excerpt": "Learn how to use React Hooks in your projects",
+      "content": [
+        "React Hooks revolutionized how we write components in React by allowing us to use state and other React features without writing classes. The useState hook is the most basic hook that lets you add React state to function components.",
+        "The useEffect hook combines the functionality of componentDidMount, componentDidUpdate, and componentWillUnmount in class components. It lets you perform side effects in function components. You can use it for data fetching, subscriptions, or manually changing the DOM.",
+        "Other essential hooks include useContext for accessing context, useReducer for more complex state logic, and useCallback/useMemo for performance optimizations. Custom hooks let you extract component logic into reusable functions.",
+        "When adopting Hooks, remember to only call them at the top level of your component (not inside loops or conditions) and only from React function components or custom Hooks."
+      ]
     },
     {
       "id": 2,
@@ -22,7 +28,13 @@
       },
       "reading_time": "8 min",
       "date": "2025-07-09",
-      "excerpt": "Complete guide to modern CSS Grid layouts"
+      "excerpt": "Complete guide to modern CSS Grid layouts",
+      "content": [
+        "CSS Grid Layout is a powerful two-dimensional layout system that lets you create complex web designs with ease. Unlike Flexbox which is one-dimensional, Grid allows precise control over both rows and columns simultaneously.",
+        "To start using Grid, you define a grid container with display: grid. Then you can use grid-template-columns and grid-template-rows to establish your grid structure. The fr unit represents a fraction of the available space.",
+        "Grid items can be precisely placed using grid-column and grid-row properties. The grid-area property provides a shorthand for placement. You can also create named grid areas for more readable layouts.",
+        "Advanced features include auto-placement, alignment controls, and responsive design with media queries. Grid works perfectly with other layout methods like Flexbox - they complement each other rather than compete."
+      ]
     },
     {
       "id": 3,
@@ -34,7 +46,13 @@
       },
       "reading_time": "5 min",
       "date": "2025-07-08",
-      "excerpt": "Optimize your JavaScript code with these techniques"
+      "excerpt": "Optimize your JavaScript code with these techniques",
+      "content": [
+        "Optimizing JavaScript performance starts with understanding the critical rendering path. Minimize main thread work by breaking long tasks into smaller chunks using setTimeout or requestIdleCallback.",
+        "Memory management is crucial - avoid memory leaks by properly cleaning up event listeners and timeouts. Use weak references when appropriate. Be mindful of closures that may unintentionally keep large objects in memory.",
+        "For computational heavy tasks, consider Web Workers to move work off the main thread. Optimize loops by reducing DOM access, caching array lengths, and using more efficient algorithms.",
+        "Always profile before optimizing! Chrome DevTools' Performance panel helps identify bottlenecks. Remember that sometimes the perceived performance (how fast it feels) matters more than actual metrics."
+      ]
     },
     {
       "id": 4,
@@ -46,7 +64,13 @@
       },
       "reading_time": "10 min",
       "date": "2025-07-07",
-      "excerpt": "Step-by-step guide to creating robust APIs"
+      "excerpt": "Step-by-step guide to creating robust APIs",
+      "content": [
+        "REST (Representational State Transfer) is an architectural style for designing networked applications. A RESTful API uses HTTP requests to GET, PUT, POST and DELETE data following REST principles.",
+        "In Node.js, frameworks like Express make building REST APIs straightforward. Start by defining your resources and the operations (CRUD) you'll perform on them. Use proper HTTP methods and status codes.",
+        "Implement proper error handling and validation. Use middleware for common tasks like authentication, logging, and request parsing. Document your API thoroughly using tools like Swagger/OpenAPI.",
+        "Consider security aspects: implement rate limiting, input sanitization, and proper authentication (JWT/OAuth). For production, add caching, load balancing, and proper monitoring."
+      ]
     },
     {
       "id": 5,
@@ -58,7 +82,13 @@
       },
       "reading_time": "7 min",
       "date": "2025-07-06",
-      "excerpt": "How to write better TypeScript code"
+      "excerpt": "How to write better TypeScript code",
+      "content": [
+        "TypeScript brings static typing to JavaScript, catching errors during development. Start by configuring strict mode in tsconfig.json - it enables all strict type checking options for maximum safety.",
+        "Use interfaces for defining object shapes and types for aliasing primitive types. Prefer interfaces over type aliases for object types as they are more extensible. Use utility types (Partial, Pick, Omit) to avoid repetition.",
+        "Leverage TypeScript's advanced features like generics for reusable components, discriminated unions for modeling complex states, and type guards for runtime type checking.",
+        "Gradually migrate JavaScript projects by renaming files to .ts and fixing type errors. Use JSDoc comments when you can't immediately add types. Remember that TypeScript is a superset of JavaScript - not all code needs types immediately."
+      ]
     },
     {
       "id": 6,
@@ -70,7 +100,13 @@
       },
       "reading_time": "6 min",
       "date": "2025-07-05",
-      "excerpt": "Make your websites work on all devices"
+      "excerpt": "Make your websites work on all devices",
+      "content": [
+        "Responsive design ensures your website works well on all devices. Start with mobile-first approach - design for small screens first then enhance for larger screens. Use relative units (em, rem, %) instead of fixed pixels.",
+        "CSS Media queries let you apply different styles based on device characteristics. Common breakpoints are 576px (mobile), 768px (tablet), 992px (desktop), and 1200px (large screens). But design based on content, not specific devices.",
+        "Flexbox and Grid are essential for responsive layouts. Use responsive images with srcset and sizes attributes. Implement responsive typography that scales appropriately across viewports.",
+        "Test on real devices when possible. Use Chrome DevTools device mode for initial testing. Remember that responsive design isn't just about layout - consider performance, touch targets, and mobile UX patterns."
+      ]
     },
     {
       "id": 7,
@@ -82,7 +118,13 @@
       },
       "reading_time": "9 min",
       "date": "2025-07-04",
-      "excerpt": "Effective component design in Vue.js"
+      "excerpt": "Effective component design in Vue.js",
+      "content": [
+        "Vue components are reusable Vue instances with a name. The single file component (.vue files) approach combines template, script, and style in one file. Components should be small and focused on a single responsibility.",
+        "Props are how parent components pass data to child components. They should be explicitly defined with type checking. Custom events ($emit) allow child-to-parent communication. For complex state management, use Vuex.",
+        "Slots provide a way to compose components. Named slots allow multiple insertion points. Scoped slots give the parent component access to child component data.",
+        "Lifecycle hooks (created, mounted, etc.) let you execute code at specific stages. Mixins allow reusable functionality but composition API (Vue 3) provides a better alternative. Always use key attribute with v-for."
+      ]
     },
     {
       "id": 8,
@@ -94,7 +136,13 @@
       },
       "reading_time": "8 min",
       "date": "2025-07-03",
-      "excerpt": "Make your website accessible to everyone"
+      "excerpt": "Make your website accessible to everyone",
+      "content": [
+        "Web accessibility (a11y) ensures people with disabilities can use the web. Follow WCAG (Web Content Accessibility Guidelines) which has four principles: perceivable, operable, understandable, and robust.",
+        "Semantic HTML is the foundation - use proper heading structure, landmarks (header, nav, main), and ARIA attributes when necessary. Ensure sufficient color contrast (minimum 4.5:1 for normal text).",
+        "Make all functionality available via keyboard. Ensure focus indicators are visible. Provide text alternatives for non-text content. Forms should have proper labels and error messages.",
+        "Test with screen readers (NVDA, VoiceOver) and keyboard navigation. Automated tools like axe can catch many issues, but manual testing is essential. Accessibility benefits all users, not just those with disabilities."
+      ]
     },
     {
       "id": 9,
@@ -106,7 +154,13 @@
       },
       "reading_time": "11 min",
       "date": "2025-07-02",
-      "excerpt": "Introduction to GraphQL for beginners"
+      "excerpt": "Introduction to GraphQL for beginners",
+      "content": [
+        "GraphQL is a query language for APIs that provides a more efficient alternative to REST. Clients can request exactly the data they need, reducing over-fetching. It uses a strong type system to define the API's capabilities.",
+        "The schema is the foundation - it defines types and relationships. Queries fetch data, mutations modify data, and subscriptions enable real-time updates. Resolvers contain the logic for fetching the data for each field.",
+        "Compared to REST, GraphQL reduces network requests by allowing clients to get all needed data in a single request. It's self-documenting through introspection and tools like GraphiQL provide interactive exploration.",
+        "Common implementations include Apollo Server and Client, and Relay. For Node.js backends, combine with Express. Schema stitching allows combining multiple GraphQL APIs. Consider caching strategies for performance."
+      ]
     },
     {
       "id": 10,
@@ -118,7 +172,13 @@
       },
       "reading_time": "12 min",
       "date": "2025-07-01",
-      "excerpt": "Containerize your web applications"
+      "excerpt": "Containerize your web applications",
+      "content": [
+        "Docker containers package applications with all their dependencies, ensuring consistency across environments. Unlike VMs, containers share the host OS kernel, making them lightweight and fast.",
+        "A Dockerfile defines how to build an image. Common instructions include FROM (base image), COPY (add files), RUN (execute commands), and CMD (default command). Use .dockerignore to exclude unnecessary files.",
+        "Docker Compose manages multi-container applications. Define services in docker-compose.yml for your app, database, cache, etc. Volumes persist data and networks enable secure communication between containers.",
+        "For development, use bind mounts to sync local files with the container. In production, consider orchestration with Kubernetes or Docker Swarm. Always follow security best practices like not running as root."
+      ]
     },
     {
       "id": 11,
@@ -130,7 +190,13 @@
       },
       "reading_time": "7 min",
       "date": "2025-06-30",
-      "excerpt": "Comparing modern state management solutions"
+      "excerpt": "Comparing modern state management solutions",
+      "content": [
+        "State management has evolved significantly with new patterns and tools. While Redux remains popular, newer solutions like Zustand and Jotai offer simpler APIs for global state. Context API + useReducer works well for many cases.",
+        "Server state management libraries like React Query, SWR, and Apollo Client handle caching, synchronization, and updates for data from APIs. They reduce boilerplate and provide excellent DX.",
+        "The boundary between local and global state is blurring. Atomic state (Recoil, Jotai) allows composing state from small, independent pieces. Signals (popularized by Solid.js) provide fine-grained reactivity.",
+        "Best practices include colocating state when possible, using derived state to avoid duplication, and implementing optimistic updates for better perceived performance. Always consider if you really need global state."
+      ]
     },
     {
       "id": 12,
@@ -142,7 +208,13 @@
       },
       "reading_time": "5 min",
       "date": "2025-06-29",
-      "excerpt": "Create stunning animations with pure CSS"
+      "excerpt": "Create stunning animations with pure CSS",
+      "content": [
+        "CSS animations bring interfaces to life. Use transition for simple state changes (hover, focus) and @keyframes for complex multi-stage animations. Prefer CSS animations over JavaScript for performance.",
+        "The animation property is a shorthand for name, duration, timing-function, delay, iteration-count, direction, fill-mode, and play-state. Cubic bezier functions allow custom easing beyond the predefined options.",
+        "Performance matters - stick to animating transform and opacity as they can be hardware accelerated. Avoid animating properties that trigger layout recalculations like width/height (use scale instead).",
+        "Accessibility considerations include respecting prefers-reduced-motion media query and ensuring animations don't trigger motion sickness. Use animations purposefully to enhance UX, not just for decoration."
+      ]
     },
     {
       "id": 13,
@@ -154,7 +226,13 @@
       },
       "reading_time": "9 min",
       "date": "2025-06-28",
-      "excerpt": "Building modern websites with JAMstack"
+      "excerpt": "Building modern websites with JAMstack",
+      "content": [
+        "JAMstack (JavaScript, APIs, Markup) is a modern web development architecture. Sites are pre-built into static files during deployment, then enhanced with client-side JavaScript and serverless functions.",
+        "Benefits include better performance (CDN-hosted static files), higher security (no server to hack), cheaper scaling, and better developer experience. Popular static site generators include Next.js, Gatsby, and Eleventy.",
+        "Dynamic functionality is added via APIs - either third-party services or your own serverless functions. Authentication can be handled via services like Auth0 or Netlify Identity. Forms use services like Formspree.",
+        "The ecosystem includes headless CMS options (Contentful, Sanity), deployment platforms (Netlify, Vercel), and e-commerce solutions (Snipcart, Shopify Storefront API). JAMstack works well for most websites."
+      ]
     },
     {
       "id": 14,
@@ -166,7 +244,13 @@
       },
       "reading_time": "10 min",
       "date": "2025-06-27",
-      "excerpt": "Protect your web applications from attacks"
+      "excerpt": "Protect your web applications from attacks",
+      "content": [
+        "Web security starts with HTTPS - it's non-negotiable today. Use Let's Encrypt for free certificates. Implement security headers like Content-Security-Policy, X-Frame-Options, and Strict-Transport-Security.",
+        "Protect against common vulnerabilities: sanitize all user input to prevent XSS, use parameterized queries to prevent SQL injection, implement CSRF tokens, and rate limit API endpoints.",
+        "Authentication should use modern standards like OAuth 2.0/OpenID Connect. Store passwords securely with bcrypt/PBKDF2. Implement proper session management with HttpOnly, Secure cookies.",
+        "Keep dependencies updated (use npm audit/dependabot). Regular security audits and penetration testing help find vulnerabilities. Follow the principle of least privilege for all access controls."
+      ]
     },
     {
       "id": 15,
@@ -178,7 +262,13 @@
       },
       "reading_time": "8 min",
       "date": "2025-06-26",
-      "excerpt": "Turn your website into an app-like experience"
+      "excerpt": "Turn your website into an app-like experience",
+      "content": [
+        "PWAs combine the best of web and native apps. Core features include installability, offline functionality, and app-like experience. The web app manifest provides metadata for installation.",
+        "Service workers enable offline functionality and background sync. Cache strategies include cache-first, network-first, or stale-while-revalidate. The Cache API stores responses programmatically.",
+        "For reliable performance, precache your app shell (HTML, CSS, JS). Dynamic content can be cached at runtime. IndexedDB provides client-side storage for structured data beyond simple key-value pairs.",
+        "PWAs work across platforms but can be enhanced with platform-specific features on Android (via TWA) and iOS. Tools like Workbox simplify service worker implementation. Measure with Lighthouse."
+      ]
     },
     {
       "id": 16,
@@ -190,7 +280,13 @@
       },
       "reading_time": "6 min",
       "date": "2025-06-25",
-      "excerpt": "Improve your search rankings with Next.js"
+      "excerpt": "Improve your search rankings with Next.js",
+      "content": [
+        "Next.js provides excellent SEO capabilities out of the box. Server-side rendering ensures content is available to search engine crawlers. Static generation (getStaticProps) is even better for performance and SEO.",
+        "Use next/head to manage meta tags per page. Dynamic meta tags can be set in getServerSideProps. The built-in Image component optimizes images while maintaining SEO benefits (alt text, etc.).",
+        "Next.js handles many technical SEO aspects automatically: proper URLs, sitemap generation (with next-sitemap), clean HTML structure. It supports all major SEO improvements like schema markup.",
+        "For internationalization, next-i18next handles hreflang tags and localized content. Next.js Analytics provides insights into performance. Combine with tools like Google Search Console for best results."
+      ]
     },
     {
       "id": 17,
@@ -202,7 +298,13 @@
       },
       "reading_time": "7 min",
       "date": "2025-06-24",
-      "excerpt": "Create consistent UI with design systems"
+      "excerpt": "Create consistent UI with design systems",
+      "content": [
+        "Design systems are collections of reusable components guided by clear standards. They include design tokens (colors, typography, spacing), component libraries, and usage guidelines.",
+        "Start by auditing existing components and identifying inconsistencies. Document your design principles and visual language. Build a component library with tools like Storybook for documentation and testing.",
+        "Technical implementation varies - CSS-in-JS (Styled Components, Emotion), utility-first (Tailwind), or traditional CSS methodologies (BEM). Ensure components are accessible and responsive by default.",
+        "Maintain versioning and changelogs. Provide clear contribution guidelines. Measure adoption and gather feedback. A good design system evolves with the product while maintaining consistency."
+      ]
     },
     {
       "id": 18,
@@ -214,7 +316,13 @@
       },
       "reading_time": "11 min",
       "date": "2025-06-23",
-      "excerpt": "Introduction to high-performance web code"
+      "excerpt": "Introduction to high-performance web code",
+      "content": [
+        "WebAssembly (Wasm) is a low-level binary format that runs at near-native speed in browsers. It complements JavaScript for performance-critical tasks like games, image/video processing, and scientific computing.",
+        "Wasm modules are compiled from languages like C/C++, Rust, or Go. They interact with JavaScript through a well-defined API. Memory is managed manually (unlike JS) but languages like Rust provide safety.",
+        "Use cases include: performance-sensitive code, porting existing applications to web, and isolating security-sensitive code. The WASI initiative is expanding WebAssembly beyond the browser.",
+        "Tools like Emscripten compile C/C++ to Wasm. The Rust ecosystem has excellent Wasm support through wasm-pack. Debugging is possible with browser devtools and source maps."
+      ]
     },
     {
       "id": 19,
@@ -226,7 +334,13 @@
       },
       "reading_time": "6 min",
       "date": "2025-06-22",
-      "excerpt": "Styled-components vs Emotion vs Linaria"
+      "excerpt": "Styled-components vs Emotion vs Linaria",
+      "content": [
+        "CSS-in-JS libraries scope styles to components automatically, solving the global namespace problem. Popular options include Styled Components, Emotion, and Linaria (which extracts CSS at build time).",
+        "Styled Components uses tagged template literals to write actual CSS in JS. Emotion offers both template literal and object syntax. Both support dynamic styling based on props/theme.",
+        "Linaria provides zero-runtime CSS extraction - styles are compiled to regular CSS files. This improves performance but loses some dynamic capabilities. It's a good choice for projects wanting to avoid runtime costs.",
+        "Considerations when choosing: performance needs, theming requirements, server-side rendering support, and team preferences. All support TypeScript and work well with component libraries."
+      ]
     },
     {
       "id": 20,
@@ -238,7 +352,13 @@
       },
       "reading_time": "9 min",
       "date": "2025-06-21",
-      "excerpt": "Building backend logic without servers"
+      "excerpt": "Building backend logic without servers",
+      "content": [
+        "Serverless functions (like AWS Lambda, Vercel Edge Functions) run code without managing servers. They scale automatically and you pay only for actual usage. Cold starts can impact performance but techniques mitigate this.",
+        "Use cases include: API endpoints, form processing, authentication, webhooks. They work well with JAMstack sites for dynamic functionality. Keep functions small and focused - the 'nanoservices' approach.",
+        "Each platform has limits (execution time, memory, etc.). Structure code to work within these constraints. Use environment variables for configuration. Implement proper error handling and logging.",
+        "For local development, use tools like serverless-offline. Testing requires mocking the cloud environment. Monitor performance and errors in production. Combine with other serverless services (DB, storage) for full apps."
+      ]
     },
     {
       "id": 21,
@@ -250,7 +370,13 @@
       },
       "reading_time": "7 min",
       "date": "2025-06-20",
-      "excerpt": "Native component model for the web"
+      "excerpt": "Native component model for the web",
+      "content": [
+        "Web Components are a set of web platform APIs that allow creating reusable custom elements. The three main technologies are: Custom Elements (define new HTML tags), Shadow DOM (encapsulated styling), and HTML Templates.",
+        "Custom Elements must contain a hyphen in their name (my-element). They extend HTMLElement class and have lifecycle callbacks (connectedCallback, disconnectedCallback). Properties and attributes should stay in sync.",
+        "Shadow DOM provides style and DOM encapsulation. Slots allow composition similar to framework components. The Declarative Shadow DOM enables server-side rendering of Web Components.",
+        "While Web Components work across frameworks, integration varies. Many design systems now offer Web Component versions alongside framework-specific implementations. Polyfills support older browsers."
+      ]
     },
     {
       "id": 22,
@@ -262,7 +388,13 @@
       },
       "reading_time": "8 min",
       "date": "2025-06-19",
-      "excerpt": "Build cross-platform apps with React"
+      "excerpt": "Build cross-platform apps with React",
+      "content": [
+        "React Native for Web allows using React Native components and APIs in web applications. It implements React Native's primitives (View, Text, etc.) using web standards (div, span).",
+        "Benefits include code reuse between mobile and web, consistent design systems, and leveraging React Native's developer experience. Performance is generally good as it uses efficient DOM updates.",
+        "Not all React Native APIs are available on web. Some platform-specific code may be needed. Responsive design works differently than traditional web - use React Native's Dimensions API or hooks.",
+        "Popular libraries like React Navigation and NativeBase support web. Testing requires both browser and device testing. The ecosystem is growing with many components now offering web support."
+      ]
     },
     {
       "id": 23,
@@ -274,7 +406,13 @@
       },
       "reading_time": "5 min",
       "date": "2025-06-18",
-      "excerpt": "Powerful theming with CSS variables"
+      "excerpt": "Powerful theming with CSS variables",
+      "content": [
+        "CSS variables (custom properties) enable reusable values in CSS. Defined with --prefix (--main-color: blue), they're accessed with var() (color: var(--main-color)). They cascade and inherit like regular properties.",
+        "Unlike preprocessor variables, CSS variables are dynamic - they can be changed at runtime with JavaScript (document.documentElement.style.setProperty()). This enables theming and runtime adjustments.",
+        "Use cases include: theming, responsive design adjustments, and reducing duplication. They work particularly well with calc() for dynamic calculations. Fallback values can be provided (var(--color, red)).",
+        "Best practices: scope variables appropriately (root vs component), name semantically (--text-primary not --blue), and document available variables. They can even be animated with @keyframes!"
+      ]
     },
     {
       "id": 24,
@@ -286,7 +424,13 @@
       },
       "reading_time": "10 min",
       "date": "2025-06-17",
-      "excerpt": "Comprehensive guide to frontend testing"
+      "excerpt": "Comprehensive guide to frontend testing",
+      "content": [
+        "A comprehensive testing strategy includes multiple levels: unit tests (Jest) for individual functions, component tests (React Testing Library) for UI components, integration tests for feature combinations, and E2E tests (Cypress) for user flows.",
+        "Test Pyramid principle suggests many unit tests, fewer integration tests, and even fewer E2E tests. Focus testing on business logic and critical paths. Avoid testing implementation details.",
+        "Mock sparingly - prefer real implementations when practical. Use snapshot testing judiciously. Visual regression testing (Storybook, Percy) catches CSS issues. Performance testing should be part of CI.",
+        "Accessibility testing (axe-core) ensures inclusive design. Test error states and edge cases. Continuous Integration runs tests on every commit. Monitoring in production catches issues tests didn't."
+      ]
     },
     {
       "id": 25,
@@ -298,7 +442,13 @@
       },
       "reading_time": "8 min",
       "date": "2025-06-16",
-      "excerpt": "Identify and fix performance bottlenecks"
+      "excerpt": "Identify and fix performance bottlenecks",
+      "content": [
+        "Performance auditing starts with metrics: Largest Contentful Paint (loading), First Input Delay (interactivity), Cumulative Layout Shift (visual stability). Use Lighthouse for comprehensive scoring.",
+        "Optimize critical rendering path: minimize render-blocking resources, defer non-critical JS/CSS, optimize images (WebP, lazy loading), use efficient fonts (subsetting, font-display).",
+        "JavaScript optimization includes code splitting, tree shaking, and minimizing main thread work. Web Workers move heavy processing off the main thread. Virtualization helps with long lists.",
+        "Caching strategies (service workers, CDN) reduce repeat visits. Prefetch important resources. Monitor real user metrics (RUM) with tools like SpeedCurve. Performance budgets keep teams accountable."
+      ]
     }
   ]
 }
