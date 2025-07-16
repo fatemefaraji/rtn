@@ -3,8 +3,8 @@ import React from 'react';
 function AboutUs() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-emerald-50 via-white to-emerald-100 py-16 px-4">
-      <div className="max-w-4xl mx-auto bg-white shadow-xl rounded-3xl p-10 text-gray-800">
-        <h1 className="text-5xl font-extrabold text-center text-emerald-700 mb-8">
+      <div className="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl p-10 text-gray-800">
+        <h1 className="text-5xl font-extrabold text-center text-emerald-700 mb-10">
           About Us
         </h1>
 
@@ -15,7 +15,7 @@ function AboutUs() {
         </p>
 
         <p className="text-lg mb-6 leading-relaxed">
-          On this platform, you’ll find deep dives into modern frameworks like <span className="font-semibold text-emerald-600">React, Next.js</span>, and <span className="font-semibold text-emerald-600">TypeScript</span>,
+          On this platform, you’ll find deep dives into modern frameworks like <span className="font-semibold text-emerald-600">React</span>, <span className="font-semibold text-emerald-600">Next.js</span>, and <span className="font-semibold text-emerald-600">TypeScript</span>,
           along with practical tutorials, UI/UX tips, coding best practices, and personal insights into the world of web development.
           Whether you're looking to start your first blog, master APIs, or stay updated with the latest tools and trends — you're in the right place.
         </p>

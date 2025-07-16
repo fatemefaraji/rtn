@@ -2,7 +2,7 @@ import React from 'react';
 
 function Articles({ article }) {
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow h-full">
       <img 
         src={article.image} 
         alt={article.title} 
@@ -28,12 +28,9 @@ function Articles({ article }) {
           <span>{new Date(article.date).toLocaleDateString()}</span>
         </div>
         
-        <a 
-          href="#" 
-          className="text-blue-600 hover:text-blue-800 font-medium"
-        >
+        <span className="text-blue-600 hover:text-blue-800 font-medium cursor-pointer">
           Read More →
-        </a>
+        </span>
       </div>
     </div>
   );
