@@ -18,6 +18,7 @@ function CreateContent() {
     }));
   };
 
+
   const handleSubmit = () => {
     console.log("📝 Submitted article:", article);
     
@@ -118,3 +119,28 @@ function CreateContent() {
 }
 
 export default CreateContent;
+
+
+{/* const handleChangeArticle = (e) => {
+    const { name, value } = e.target;
+
+    switch (name) {
+      case "title":
+        setArticle((prev) => ({ ...prev, title: value }));
+        break;
+      case "date":
+        setArticle((prev) => ({ ...prev, date: value }));
+        break;
+      case "content":
+        setArticle((prev) => ({ ...prev, content: value }));
+        break;
+      case "author":
+        setArticle((prev) => ({ ...prev, author: value }));
+        break;
+      case "readingTime":
+        setArticle((prev) => ({ ...prev, readingTime: value }));
+        break;
+      default:
+        break;
+    }
+  }; */} 
