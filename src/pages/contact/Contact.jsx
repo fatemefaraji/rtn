@@ -45,11 +45,11 @@ function Contact() {
         <div>
           <p className={`mb-1 font-medium ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>🐦 Twitter:</p>
           <a
-            href="https://twitter.com/lenafaraji"
+            href="https://x.com/fatemefarajii"
             className={`hover:underline transition-colors duration-200
               ${isDark ? 'text-emerald-400 hover:text-emerald-600' : 'text-green-600 hover:text-green-800'}`}
           >
-            @yourhandle
+            x.com/fatemefarajii
           </a>
         </div>
       </div>
