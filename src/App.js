@@ -8,6 +8,7 @@ import ArticlePage from './pages/articlePage/ArticlePage.jsx';
 import Categories from './pages/categories/Categories.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import CreateContent from './pages/createContent/CreateContent.jsx';
+import Login from './pages/login/Login.jsx';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/categories" element={<Categories />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/create-content" element={<CreateContent />} />
+          <Route path='/login' element={<Login/>}/>
         </Routes>
       </main>
     </div>
