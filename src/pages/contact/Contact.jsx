@@ -1,40 +1,53 @@
-
-import React from 'react';
+import React, { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext'; 
 
 function Contact() {
+  const { isDark } = useContext(ThemeContext);
+
   return (
-    <div className="max-w-2xl mx-auto px-6 py-14 bg-gradient-to-br from-green-50 via-white to-green-100 rounded-xl shadow-xl">
-      <h1 className="text-4xl font-extrabold text-center text-green-700 mb-4">Contact Us</h1>
-      <p className="text-lg text-center text-green-900 mb-10">
+    <div className={`max-w-2xl mx-auto px-6 py-14 rounded-xl shadow-xl
+      ${isDark ? 'bg-gray-900 text-gray-200' : 'bg-gradient-to-br from-green-50 via-white to-green-100 text-green-900'}
+    `}>
+      <h1 className={`text-4xl font-extrabold text-center mb-4 
+        ${isDark ? 'text-emerald-400' : 'text-green-700'}`}>
+        Contact Us
+      </h1>
+      <p className={`text-lg text-center mb-10 
+        ${isDark ? 'text-gray-300' : 'text-green-900'}`}>
         Have a question, suggestion, or just want to say hi? We’d love to hear from you!
       </p>
 
-      <div className="bg-white p-6 rounded-2xl shadow-lg border border-green-100">
+      <div className={`p-6 rounded-2xl shadow-lg border
+        ${isDark ? 'bg-gray-800 border-gray-700' : 'bg-white border-green-100'}
+      `}>
         <div className="mb-6">
-          <p className="text-gray-700 mb-1 font-medium">📧 Email:</p>
+          <p className={`mb-1 font-medium ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>📧 Email:</p>
           <a
-            href="mailto:mrweblog@example.com"
-            className="text-green-600 hover:text-green-800 transition-colors duration-200 underline"
+            href="mailto:lenafaraji.dev@gmail.com"
+            className={`hover:underline transition-colors duration-200 
+              ${isDark ? 'text-emerald-400 hover:text-emerald-600' : 'text-green-600 hover:text-green-800'}`}
           >
-            mrweblog@example.com
+            lenafaraji.dev@gmail.com
           </a>
         </div>
 
         <div className="mb-6">
-          <p className="text-gray-700 mb-1 font-medium">💼 LinkedIn:</p>
+          <p className={`mb-1 font-medium ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>💼 LinkedIn:</p>
           <a
-            href="https://linkedin.com/in/yourprofile"
-            className="text-green-600 hover:text-green-800 transition-colors duration-200 underline"
+            href="https://linkedin.com/in/lenafaraji"
+            className={`hover:underline transition-colors duration-200
+              ${isDark ? 'text-emerald-400 hover:text-emerald-600' : 'text-green-600 hover:text-green-800'}`}
           >
-            linkedin.com/in/yourprofile
+            linkedin.com/in/lenafaraji
           </a>
         </div>
 
         <div>
-          <p className="text-gray-700 mb-1 font-medium">🐦 Twitter:</p>
+          <p className={`mb-1 font-medium ${isDark ? 'text-gray-300' : 'text-gray-700'}`}>🐦 Twitter:</p>
           <a
-            href="https://twitter.com/yourhandle"
-            className="text-green-600 hover:text-green-800 transition-colors duration-200 underline"
+            href="https://twitter.com/lenafaraji"
+            className={`hover:underline transition-colors duration-200
+              ${isDark ? 'text-emerald-400 hover:text-emerald-600' : 'text-green-600 hover:text-green-800'}`}
           >
             @yourhandle
           </a>
