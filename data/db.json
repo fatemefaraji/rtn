@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "Getting Started with React Hooks",
+      "category": "React",
       "image": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Sarah Johnson",
@@ -21,6 +22,7 @@
     {
       "id": 2,
       "title": "CSS Grid Layout Mastery",
+      "category": "CSS",
       "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Michael Chen",
@@ -39,6 +41,7 @@
     {
       "id": 3,
       "title": "JavaScript Performance Tips",
+      "category": "JavaScript",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Emma Davis",
@@ -57,6 +60,7 @@
     {
       "id": 4,
       "title": "Building RESTful APIs with Node.js",
+      "category": "Backend",
       "image": "https://images.unsplash.com/photo-1451187580459-43490279c0b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "David Wilson",
@@ -75,6 +79,7 @@
     {
       "id": 5,
       "title": "TypeScript Best Practices",
+      "category": "TypeScript",
       "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Olivia Martinez",
@@ -93,6 +98,7 @@
     {
       "id": 6,
       "title": "Responsive Design Principles",
+      "category": "CSS",
       "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "James Anderson",
@@ -111,6 +117,7 @@
     {
       "id": 7,
       "title": "Vue.js Component Patterns",
+      "category": "Vue",
       "image": "https://images.unsplash.com/photo-1593642634367-d91a135587b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Sophia Lee",
@@ -129,6 +136,7 @@
     {
       "id": 8,
       "title": "Web Accessibility Guidelines",
+      "category": "Accessibility",
       "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Robert Taylor",
@@ -147,6 +155,7 @@
     {
       "id": 9,
       "title": "GraphQL Fundamentals",
+      "category": "API",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Ava White",
@@ -165,6 +174,7 @@
     {
       "id": 10,
       "title": "Docker for Web Developers",
+      "category": "DevOps",
       "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "William Brown",
@@ -183,6 +193,7 @@
     {
       "id": 11,
       "title": "State Management in 2025",
+      "category": "Frontend",
       "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Mia Garcia",
@@ -201,6 +212,7 @@
     {
       "id": 12,
       "title": "CSS Animations Workshop",
+      "category": "CSS",
       "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Joseph Rodriguez",
@@ -219,6 +231,7 @@
     {
       "id": 13,
       "title": "JAMstack Architecture",
+      "category": "Architecture",
       "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Charlotte Hernandez",
@@ -237,6 +250,7 @@
     {
       "id": 14,
       "title": "Web Security Essentials",
+      "category": "Security",
       "image": "https://images.unsplash.com/photo-1555949969-7b9d0f3e65f2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Daniel Martinez",
@@ -255,6 +269,7 @@
     {
       "id": 15,
       "title": "Progressive Web Apps Guide",
+      "category": "PWA",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Amelia Lopez",
@@ -273,6 +288,7 @@
     {
       "id": 16,
       "title": "Next.js for SEO",
+      "category": "React",
       "image": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Matthew Gonzalez",
@@ -291,6 +307,7 @@
     {
       "id": 17,
       "title": "Design Systems 101",
+      "category": "UI/UX",
       "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Harper Perez",
@@ -309,6 +326,7 @@
     {
       "id": 18,
       "title": "WebAssembly Basics",
+      "category": "Performance",
       "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Ethan Sanchez",
@@ -327,6 +345,7 @@
     {
       "id": 19,
       "title": "CSS-in-JS Comparison",
+      "category": "CSS",
       "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Evelyn Torres",
@@ -345,6 +364,7 @@
     {
       "id": 20,
       "title": "Serverless Functions",
+      "category": "Backend",
       "image": "https://images.unsplash.com/photo-1451187580459-43490279c0b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Alexander Ramirez",
@@ -363,6 +383,7 @@
     {
       "id": 21,
       "title": "Web Components Guide",
+      "category": "Web Standards",
       "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Abigail Flores",
@@ -381,6 +402,7 @@
     {
       "id": 22,
       "title": "React Native for Web",
+      "category": "React",
       "image": "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Benjamin Washington",
@@ -399,6 +421,7 @@
     {
       "id": 23,
       "title": "CSS Custom Properties",
+      "category": "CSS",
       "image": "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Emily Adams",
@@ -417,6 +440,7 @@
     {
       "id": 24,
       "title": "Testing Strategies",
+      "category": "Testing",
       "image": "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Christopher Nelson",
@@ -435,6 +459,7 @@
     {
       "id": 25,
       "title": "Web Performance Audit",
+      "category": "Performance",
       "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400&q=80",
       "author": {
         "name": "Elizabeth Carter",
