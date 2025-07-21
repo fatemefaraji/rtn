@@ -1,146 +1,149 @@
-import { useState } from "react";
-
+import React, { useState } from "react";
+import { useArticleForm } from "../../hooks/useArticleForm";
+import Spinner from "../../components/spinner/Spinner";
 function CreateContent() {
-  const [article, setArticle] = useState({
-    title: "",
-    date: "",
-    author: "",
-    reading_time: "",
-    excerpt: "",
-    content: "",
-  });
+  const {
+    article,
+    handleChange,
+    handleImageUpload,
+    handleSubmit: originalHandleSubmit,
+  } = useArticleForm();
 
-  const handleChangeArticle = (e) => {
-    const { name, value } = e.target;
-    setArticle((prev) => ({
-      ...prev,
-      [name]: value,
-    }));
-  };
+  const [loading, setLoading] = useState(false);
 
-
-  const handleSubmit = () => {
-    console.log("📝 Submitted article:", article);
-    
+  const handleSubmit = async () => {
+    setLoading(true);
+    try {
+      await originalHandleSubmit();
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
-    <div className="max-w-xl mx-auto p-8 mt-12 bg-white rounded-xl shadow-md">
-      <h1 className="text-2xl font-bold text-emerald-600 mb-6 text-center">
+    <div className="max-w-xl mx-auto p-8 mt-12 bg-white dark:bg-gray-900 rounded-xl shadow-md">
+      <h1 className="text-2xl font-bold text-emerald-600 dark:text-emerald-400 mb-6 text-center">
         ✍️ Create New Article
       </h1>
 
-      <div className="space-y-4">
-        {/* Title */}
-        <div>
-          <label className="block text-gray-700 font-medium mb-1">Title</label>
-          <input
+      {loading ? (
+        <Spinner />
+      ) : (
+        <div className="space-y-4">
+          {/* Title */}
+          <FormInput
+            label="Title"
             name="title"
-            type="text"
             value={article.title}
-            onChange={handleChangeArticle}
+            onChange={handleChange}
             placeholder="Enter article title"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-400 focus:ring-2"
           />
-        </div>
 
-        {/* Date */}
-        <div>
-          <label className="block text-gray-700 font-medium mb-1">Date</label>
-          <input
+          {/* Date */}
+          <FormInput
+            label="Date"
             name="date"
             type="date"
             value={article.date}
-            onChange={handleChangeArticle}
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-400 focus:ring-2"
+            onChange={handleChange}
           />
-        </div>
 
-        {/* Author */}
-        <div>
-          <label className="block text-gray-700 font-medium mb-1">Author</label>
-          <input
+          {/* Author */}
+          <FormInput
+            label="Author"
             name="author"
-            type="text"
             value={article.author}
-            onChange={handleChangeArticle}
+            onChange={handleChange}
             placeholder="Author name"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-400 focus:ring-2"
           />
-        </div>
 
-        {/* Reading Time */}
-        <div>
-          <label className="block text-gray-700 font-medium mb-1">Reading Time</label>
-          <input
+          {/* Reading Time */}
+          <FormInput
+            label="Reading Time"
             name="reading_time"
-            type="text"
             value={article.reading_time}
-            onChange={handleChangeArticle}
+            onChange={handleChange}
             placeholder="e.g. 6 min"
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-400 focus:ring-2"
           />
-        </div>
 
-        {/* Excerpt */}
-        <div>
-          <label className="block text-gray-700 font-medium mb-1">Excerpt</label>
-          <textarea
+          {/* Excerpt */}
+          <FormTextarea
+            label="Excerpt"
             name="excerpt"
             value={article.excerpt}
-            onChange={handleChangeArticle}
+            onChange={handleChange}
             placeholder="Short summary..."
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-400 focus:ring-2 h-20"
-          ></textarea>
-        </div>
+            height="h-20"
+          />
 
-        {/* Content */}
-        <div>
-          <label className="block text-gray-700 font-medium mb-1">Content</label>
-          <textarea
+          {/* Content */}
+          <FormTextarea
+            label="Content"
             name="content"
             value={article.content}
-            onChange={handleChangeArticle}
+            onChange={handleChange}
             placeholder="Full article content..."
-            className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-400 focus:ring-2 h-40"
-          ></textarea>
-        </div>
+            height="h-40"
+          />
 
-        {/* Submit */}
-        <button
-          onClick={handleSubmit}
-          className="w-full bg-emerald-600 text-white font-semibold py-2 rounded-md hover:bg-emerald-700 transition-colors"
-        >
-          ✅ Submit
-        </button>
-      </div>
+          {/* Cover Image */}
+          <div>
+            <label className="block text-gray-700 dark:text-gray-200 font-medium mb-1">
+              Cover Image
+            </label>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageUpload}
+              className="block w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4
+                file:rounded-md file:border-0 file:text-sm file:font-semibold
+                file:bg-emerald-100 file:text-emerald-700 hover:file:bg-emerald-200"
+            />
+            {article.image && (
+              <img
+                src={URL.createObjectURL(article.image)}
+                alt="Preview"
+                className="mt-2 max-h-40 object-cover rounded-md"
+              />
+            )}
+          </div>
+
+          {/* Submit Button */}
+          <button
+            onClick={handleSubmit}
+            className="w-full bg-emerald-600 text-white font-semibold py-2 rounded-md hover:bg-emerald-700 transition-colors"
+          >
+            ✅ Submit
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function FormInput({ label, ...props }) {
+  return (
+    <div>
+      <label className="block text-gray-700 dark:text-gray-200 font-medium mb-1">{label}</label>
+      <input
+        {...props}
+        type={props.type || "text"}
+        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-400 focus:ring-2 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
+      />
+    </div>
+  );
+}
+
+function FormTextarea({ label, height = "h-24", ...props }) {
+  return (
+    <div>
+      <label className="block text-gray-700 dark:text-gray-200 font-medium mb-1">{label}</label>
+      <textarea
+        {...props}
+        className={`w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-emerald-400 focus:ring-2 dark:bg-gray-800 dark:border-gray-600 dark:text-white ${height}`}
+      ></textarea>
     </div>
   );
 }
 
 export default CreateContent;
-
-
-{/* const handleChangeArticle = (e) => {
-    const { name, value } = e.target;
-
-    switch (name) {
-      case "title":
-        setArticle((prev) => ({ ...prev, title: value }));
-        break;
-      case "date":
-        setArticle((prev) => ({ ...prev, date: value }));
-        break;
-      case "content":
-        setArticle((prev) => ({ ...prev, content: value }));
-        break;
-      case "author":
-        setArticle((prev) => ({ ...prev, author: value }));
-        break;
-      case "readingTime":
-        setArticle((prev) => ({ ...prev, readingTime: value }));
-        break;
-      default:
-        break;
-    }
-  }; */} 
